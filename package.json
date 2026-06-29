@@ -1,0 +1,60 @@
+{
+  "name": "nodex-music",
+  "version": "1.2.0",
+  "description": "nodex.pw — слушай всё без подписки",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder build --win --publish never",
+    "publish": "electron-builder build --win --publish always",
+    "gen-icons": "powershell -ExecutionPolicy Bypass -File scripts/gen-icons.ps1"
+  },
+  "dependencies": {
+    "electron-updater": "^6.3.9"
+  },
+  "devDependencies": {
+    "electron": "^32.2.7",
+    "electron-builder": "^25.1.8"
+  },
+  "build": {
+    "appId": "pw.nodex.pw",
+    "productName": "nodex.pw",
+    "copyright": "© 2025 Nodex.pw LTD",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "src/**/*",
+      "assets/**/*"
+    ],
+    "compression": "maximum",
+    "win": {
+      "target": [
+        {
+          "target": "nsis-web",
+          "arch": ["x64"]
+        }
+      ],
+      "icon": "assets/icon.ico",
+      "artifactName": "${productName}-setup.${ext}",
+      "legalTrademarks": "Nodex.pw LTD",
+      "verifyUpdateCodeSignature": false,
+      "requestedExecutionLevel": "asInvoker"
+    },
+    "nsis": {
+      "oneClick": true,
+      "perMachine": false,
+      "deleteAppDataOnUninstall": false,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "nodex.pw",
+      "installerSidebar": "assets/installer-sidebar.bmp",
+      "uninstallerSidebar": "assets/installer-sidebar.bmp",
+      "installerHeader": "assets/installer-header.bmp"
+    },
+    "publish": {
+      "provider": "generic",
+      "url": "https://music.nodex.pw/updates/"
+    }
+  }
+}

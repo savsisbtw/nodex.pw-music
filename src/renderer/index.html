@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>nodex.pw</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ONBOARDING -->
+<div id="onboarding" class="onboarding hidden">
+  <div class="ob-bg"></div>
+  <div class="ob-panel">
+    <div class="ob-step active" data-step="1">
+      <div class="ob-logo-wrap">
+        <svg viewBox="0 0 100 100" fill="none" width="64" height="64">
+          <rect width="100" height="100" rx="18" fill="#141414"/>
+          <rect x="18" y="18" width="10" height="64" fill="#fff"/>
+          <rect x="28" y="18" width="10" height="10" fill="#fff"/>
+          <rect x="38" y="28" width="10" height="10" fill="#fff"/>
+          <rect x="48" y="38" width="10" height="10" fill="#fff"/>
+          <rect x="58" y="48" width="10" height="10" fill="#fff"/>
+          <rect x="68" y="18" width="10" height="64" fill="#fff"/>
+          <rect x="74" y="74" width="6" height="6" fill="#fff" opacity=".5"/>
+        </svg>
+      </div>
+      <div class="ob-title">nodex.pw</div>
+      <div class="ob-sub">made by savsis just for you</div>
+      <div class="ob-desc">слушай Apple Music, YouTube Music и SoundCloud без подписки. всё в одном.</div>
+      <button class="ob-next" data-next="2">начать →</button>
+    </div>
+    <div class="ob-step" data-step="2">
+      <div class="ob-plats">
+        <div class="ob-plat">
+          <svg viewBox="0 0 24 24" fill="#fff" width="28" height="28"><path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09z"/><path d="M15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701z"/></svg>
+          <span>Apple Music</span>
+        </div>
+        <div class="ob-plat">
+          <svg viewBox="0 0 24 24" fill="#fff" width="28" height="28"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          <span>YouTube Music</span>
+        </div>
+        <div class="ob-plat">
+          <svg viewBox="0 0 24 24" fill="#fff" width="28" height="28"><path d="M1.175 12.225c-.041 0-.094.009-.134.009C.455 12.234 0 11.766 0 11.1s.455-1.134 1.041-1.134c.075 0 .15.009.225.025.534-2.866 3.2-5.041 6.384-5.041 3.6 0 6.516 2.941 6.516 6.55 0 .15-.009.3-.016.45h1.058c.734 0 1.325.6 1.325 1.341 0 .741-.591 1.341-1.325 1.341H1.175zm14.766-3.641c-.441 0-.8-.35-.8-.791V3.691a.796.796 0 0 1 .8-.8c.441 0 .8.35.8.8v4.1a.8.8 0 0 1-.8.793zm2.166 1.133c-.441 0-.8-.35-.8-.8V5.825a.796.796 0 0 1 .8-.8c.441 0 .8.35.8.8v3.091a.8.8 0 0 1-.8.8zm2.166-.45c-.441 0-.8-.35-.8-.8V7.375a.796.796 0 0 1 .8-.8c.441 0 .8.35.8.8v1.091a.8.8 0 0 1-.8.8z"/></svg>
+          <span>SoundCloud</span>
+        </div>
+      </div>
+      <div class="ob-title" style="margin-top:24px">три платформы</div>
+      <div class="ob-desc">ищи на всех сразу. качество до lossless. без рекламы.</div>
+      <button class="ob-next" data-next="3">дальше →</button>
+      <button class="ob-back" data-back="1">← назад</button>
+    </div>
+    <div class="ob-step" data-step="3">
+      <div class="ob-features-list">
+        <div class="ob-feat">пространственный звук 8D/12D/16D</div>
+        <div class="ob-feat">синхронизированные тексты песен</div>
+        <div class="ob-feat">видеоклипы в фоне</div>
+        <div class="ob-feat">офлайн — треки на устройстве</div>
+        <div class="ob-feat">кроссфейд между треками</div>
+      </div>
+      <div class="ob-title">всё включено</div>
+      <div class="ob-sub">и это только начало</div>
+      <button class="ob-next ob-done" data-done="1">открыть nodex.pw</button>
+      <button class="ob-back" data-back="2">← назад</button>
+    </div>
+    <div class="ob-dots">
+      <div class="ob-dot active" data-step="1"></div>
+      <div class="ob-dot" data-step="2"></div>
+      <div class="ob-dot" data-step="3"></div>
+    </div>
+  </div>
+</div>
+
+<!-- TITLEBAR -->
+<div id="titlebar">
+  <div class="tb-left tb-drag">
+    <svg class="tb-logo-icon" viewBox="0 0 100 100" fill="none" width="20" height="20">
+      <rect width="100" height="100" rx="14" fill="#1a1a1a"/>
+      <rect x="18" y="18" width="9" height="56" fill="#fff"/>
+      <rect x="27" y="18" width="9" height="9" fill="#fff"/>
+      <rect x="36" y="27" width="9" height="9" fill="#fff"/>
+      <rect x="45" y="36" width="9" height="9" fill="#fff"/>
+      <rect x="54" y="45" width="9" height="9" fill="#fff"/>
+      <rect x="63" y="18" width="9" height="56" fill="#fff"/>
+    </svg>
+    <span class="tb-brand">nodex<b>.pw</b></span>
+    <span class="tb-ver">v1.2.0</span>
+  </div>
+  <div class="tb-center tb-drag" id="tb-page-name">Главная</div>
+  <div class="tb-right">
+    <a class="tb-icon-btn" href="https://github.com/imsavsis" title="GitHub" id="tb-github">
+      <svg viewBox="0 0 24 24" fill="currentColor" width="15" height="15"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+    </a>
+    <button class="tb-win-btn" id="tb-min">
+      <svg viewBox="0 0 10 1" fill="currentColor" width="10" height="1"><rect width="10" height="1"/></svg>
+    </button>
+    <button class="tb-win-btn" id="tb-max">
+      <svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.2" width="10" height="10"><rect x=".6" y=".6" width="8.8" height="8.8"/></svg>
+    </button>
+    <button class="tb-win-btn tb-close" id="tb-close">
+      <svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.2" width="10" height="10"><line x1="1" y1="1" x2="9" y2="9"/><line x1="9" y1="1" x2="1" y2="9"/></svg>
+    </button>
+  </div>
+</div>
+
+<!-- APP SHELL -->
+<div class="app-shell" id="app-shell">
+
+  <!-- SIDEBAR (icon-only, 52px) -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sb-nav">
+      <button class="nav-item active" data-page="home" title="Главная">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="18" height="18"><path d="M3 9.5L12 3l9 6.5V20a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9.5z"/><path d="M9 21V12h6v9"/></svg>
+      </button>
+      <button class="nav-item" data-page="search" title="Поиск">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="18" height="18"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      </button>
+      <button class="nav-item" data-page="library" title="Избранное">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="18" height="18"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+      </button>
+      <button class="nav-item" data-page="downloads" title="Загрузки">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="18" height="18"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      </button>
+    </div>
+    <div class="sb-bottom">
+      <button class="nav-item" data-page="settings" title="Настройки">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="18" height="18"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+      </button>
+      <div class="sb-user" id="sidebar-user">
+        <button class="nav-item" id="login-btn" title="Войти">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="18" height="18"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        </button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="main-content" id="main-content">
+
+    <!-- HOME -->
+    <div class="page active" id="page-home">
+      <div class="home-wave-section">
+        <div class="wave-meta">
+          <h2 class="wave-title">Моя волна</h2>
+          <p class="wave-sub">Персональная подборка треков и рекомендаций для вас</p>
+          <div class="wave-actions">
+            <button class="wave-btn-play" id="wave-play-btn">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M8 5v14l11-7z"/></svg>
+            </button>
+            <button class="wave-btn-tune" id="wave-tune-btn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><line x1="4" y1="6" x2="14" y2="6"/><line x1="16" y1="6" x2="20" y2="6"/><circle cx="15" cy="6" r="2"/><line x1="4" y1="12" x2="8" y2="12"/><line x1="10" y1="12" x2="20" y2="12"/><circle cx="9" cy="12" r="2"/><line x1="4" y1="18" x2="16" y2="18"/><line x1="18" y1="18" x2="20" y2="18"/><circle cx="17" cy="18" r="2"/></svg>
+            </button>
+          </div>
+        </div>
+        <canvas id="wave-canvas"></canvas>
+      </div>
+
+      <div class="home-section">
+        <div class="home-section-hd">
+          <span class="home-section-title">Быстрый выбор</span>
+          <span class="home-section-sub">Недавно прослушанное — запустите волну по любому треку</span>
+        </div>
+        <div id="quick-picks" class="quick-picks"></div>
+      </div>
+
+      <div class="home-section">
+        <div class="home-section-hd"><span class="home-section-title">Найти музыку</span></div>
+        <div class="home-search">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="15" height="15"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+          <input id="home-q" placeholder="название, артист или ссылка..." autocomplete="off" spellcheck="false">
+        </div>
+      </div>
+    </div>
+
+    <!-- SEARCH -->
+    <div class="page" id="page-search">
+      <div class="search-top">
+        <div class="search-bar">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="16" height="16"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+          <input id="q" placeholder="Поиск — название, артист, ссылка на трек или плейлист" autocomplete="off" spellcheck="false">
+        </div>
+        <div class="plat-chips">
+          <button class="chip active" data-plat="all">все</button>
+          <button class="chip" data-plat="apple_music">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="11" height="11"><path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09z"/><path d="M15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701z"/></svg>
+            Apple
+          </button>
+          <button class="chip" data-plat="soundcloud">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="11" height="11"><path d="M1.175 12.225c-.041 0-.094.009-.134.009C.455 12.234 0 11.766 0 11.1s.455-1.134 1.041-1.134c.075 0 .15.009.225.025.534-2.866 3.2-5.041 6.384-5.041 3.6 0 6.516 2.941 6.516 6.55 0 .15-.009.3-.016.45h1.058c.734 0 1.325.6 1.325 1.341 0 .741-.591 1.341-1.325 1.341H1.175zm14.766-3.641c-.441 0-.8-.35-.8-.791V3.691a.796.796 0 0 1 .8-.8c.441 0 .8.35.8.8v4.1a.8.8 0 0 1-.8.793zm2.166 1.133c-.441 0-.8-.35-.8-.8V5.825a.796.796 0 0 1 .8-.8c.441 0 .8.35.8.8v3.091a.8.8 0 0 1-.8.8zm2.166-.45c-.441 0-.8-.35-.8-.8V7.375a.796.796 0 0 1 .8-.8c.441 0 .8.35.8.8v1.091a.8.8 0 0 1-.8.8z"/></svg>
+            SoundCloud
+          </button>
+          <button class="chip" data-plat="youtube">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="11" height="11"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            YouTube
+          </button>
+          <button class="chip" data-plat="youtube_music">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="11" height="11"><path d="M12 0C5.376 0 0 5.376 0 12s5.376 12 12 12 12-5.376 12-12S18.624 0 12 0zm0 19.104c-3.924 0-7.104-3.18-7.104-7.104S8.076 4.896 12 4.896s7.104 3.18 7.104 7.104-3.18 7.104-7.104 7.104zm0-11.304c-2.316 0-4.2 1.884-4.2 4.2s1.884 4.2 4.2 4.2 4.2-1.884 4.2-4.2-1.884-4.2-4.2-4.2z"/></svg>
+            YTM
+          </button>
+        </div>
+      </div>
+      <div id="search-empty" class="state-empty">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.8" width="56" height="56" style="opacity:.2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        <div>введите запрос выше</div>
+      </div>
+      <div id="results-wrap" style="display:none">
+        <div class="results-hd">
+          <span id="results-label" class="results-label"></span>
+          <span id="results-count" class="results-count"></span>
+        </div>
+        <div id="results-list"></div>
+      </div>
+    </div>
+
+    <!-- LIBRARY -->
+    <div class="page" id="page-library">
+      <div class="page-hd">
+        <h2>Избранное</h2>
+        <span id="lib-count" class="page-count"></span>
+      </div>
+      <div id="lib-list"><div class="state-empty" style="padding:40px 0"><div>войдите чтобы видеть избранное</div></div></div>
+    </div>
+
+    <!-- DOWNLOADS -->
+    <div class="page" id="page-downloads">
+      <div class="page-hd">
+        <h2>Загрузки</h2>
+        <span id="dl-count" class="page-count"></span>
+      </div>
+      <div class="page-hint">треки на устройстве — воспроизводятся без интернета</div>
+      <div id="dl-list"></div>
+    </div>
+
+    <!-- SETTINGS -->
+    <div class="page" id="page-settings">
+      <div class="page-hd"><h2>Настройки</h2></div>
+
+      <div class="settings-cols">
+
+        <div class="s-col">
+          <div class="s-section">
+            <div class="s-section-title">Профиль</div>
+            <div class="s-card">
+              <div id="profile-row-guest" class="profile-row">
+                <div class="profile-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="24" height="24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
+                <div>
+                  <div class="profile-name">Гость</div>
+                  <div class="profile-email">войдите чтобы сохранять избранное</div>
+                </div>
+                <button class="s-btn-w" onclick="openLogin()">Войти</button>
+              </div>
+              <div id="profile-row-user" class="profile-row" style="display:none">
+                <div id="settings-avatar" class="profile-avatar"></div>
+                <div>
+                  <div class="profile-name" id="settings-name">—</div>
+                  <div class="profile-email" id="settings-email">—</div>
+                </div>
+                <button class="s-btn-danger" id="logout-btn">Выйти</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="s-section">
+            <div class="s-section-title">Воспроизведение</div>
+            <div class="s-card">
+              <div class="s-row">
+                <span>Качество</span>
+                <select id="s-quality" class="s-select">
+                  <option value="lossless">Lossless (FLAC)</option>
+                  <option value="320" selected>320 kbps (MP3)</option>
+                  <option value="192">192 kbps</option>
+                  <option value="128">128 kbps</option>
+                </select>
+              </div>
+              <div class="s-row">
+                <span>Громкость</span>
+                <input type="range" id="s-vol" min="0" max="100" value="80" class="s-range">
+                <span class="s-val" id="s-vol-val">80%</span>
+              </div>
+              <div class="s-row">
+                <span>Кроссфейд</span>
+                <input type="range" id="s-crossfade" min="0" max="10" value="3" class="s-range">
+                <span class="s-val" id="s-crossfade-val">3 сек</span>
+              </div>
+              <div class="s-row">
+                <span>Видеофон</span>
+                <label class="s-toggle">
+                  <input type="checkbox" id="s-videobg" checked>
+                  <span class="s-toggle-track"></span>
+                </label>
+              </div>
+              <div class="s-row">
+                <span>Нормализация</span>
+                <label class="s-toggle">
+                  <input type="checkbox" id="s-normalize">
+                  <span class="s-toggle-track"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="s-section">
+            <div class="s-section-title">Тема</div>
+            <div class="s-card">
+              <div class="theme-grid" id="theme-grid">
+                <button class="theme-btn active" data-theme="dark">
+                  <div class="theme-preview" style="background:#0c0c0c;border-color:rgba(255,255,255,.1)"><div style="background:#fff;width:30%;height:2px;margin:4px;border-radius:1px"></div></div>
+                  <span>Тёмная</span>
+                </button>
+                <button class="theme-btn" data-theme="light">
+                  <div class="theme-preview" style="background:#f5f5f5;border-color:rgba(0,0,0,.1)"><div style="background:#111;width:30%;height:2px;margin:4px;border-radius:1px"></div></div>
+                  <span>Светлая</span>
+                </button>
+                <button class="theme-btn" data-theme="midnight">
+                  <div class="theme-preview" style="background:#050510;border-color:rgba(100,100,255,.2)"><div style="background:#aaf;width:30%;height:2px;margin:4px;border-radius:1px"></div></div>
+                  <span>Полночь</span>
+                </button>
+                <button class="theme-btn" data-theme="sepia">
+                  <div class="theme-preview" style="background:#1a1209;border-color:rgba(200,150,50,.2)"><div style="background:#e8c87a;width:30%;height:2px;margin:4px;border-radius:1px"></div></div>
+                  <span>Тёплая</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="s-col">
+          <div class="s-section">
+            <div class="s-section-title">Кэш</div>
+            <div class="s-card">
+              <div class="s-row"><span>Размер кэша</span><span class="s-val" id="s-cache-size">—</span></div>
+              <div class="s-row"><button class="s-btn-danger" id="clear-cache-btn">Очистить</button></div>
+            </div>
+          </div>
+
+          <div class="s-section">
+            <div class="s-section-title">Обновления</div>
+            <div class="s-card">
+              <div class="s-row"><span>Версия</span><span class="s-val" id="s-ver">—</span></div>
+              <div class="s-row" id="update-row" style="display:none">
+                <span id="update-msg-s"></span>
+                <button class="s-btn-w" id="update-action-btn-s">Скачать</button>
+              </div>
+              <div class="s-row"><span>Автообновление</span><label class="s-toggle"><input type="checkbox" id="s-autoupdate" checked><span class="s-toggle-track"></span></label></div>
+            </div>
+          </div>
+
+          <div class="s-section">
+            <div class="s-section-title">UDP — что нового в v1.2.0</div>
+            <div class="s-card s-changelog">
+              <div class="cl-entry">пространственный звук — реальное вращение в наушниках</div>
+              <div class="cl-entry">видеоклипы в фоне полного плеера</div>
+              <div class="cl-entry">кроссфейд между треками</div>
+              <div class="cl-entry">темы приложения на выбор</div>
+              <div class="cl-entry">предзагрузка следующего трека</div>
+              <div class="cl-entry">lossless/320 kbps качество</div>
+              <div class="cl-entry">синхронизированные тексты — lrclib + Genius</div>
+            </div>
+          </div>
+
+          <div class="s-section">
+            <div class="s-section-title">О приложении</div>
+            <div class="s-card s-about">
+              <svg viewBox="0 0 100 100" fill="none" width="36" height="36"><rect width="100" height="100" rx="18" fill="#141414"/><rect x="18" y="18" width="10" height="64" fill="#fff"/><rect x="28" y="18" width="10" height="10" fill="#fff"/><rect x="38" y="28" width="10" height="10" fill="#fff"/><rect x="48" y="38" width="10" height="10" fill="#fff"/><rect x="58" y="48" width="10" height="10" fill="#fff"/><rect x="68" y="18" width="10" height="64" fill="#fff"/></svg>
+              <div class="about-name">nodex.pw</div>
+              <div class="about-credit">made by savsis just for you</div>
+              <div class="about-plats">Apple Music · SoundCloud · YouTube · YTM</div>
+              <a class="about-gh" href="https://github.com/imsavsis" id="about-github">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="13" height="13"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                github.com/imsavsis
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+</div>
+
+<!-- BOTTOM PLAYER BAR (Mimosa style) -->
+<div id="player-bar" class="player-bar">
+  <div class="pb-prog-wrap">
+    <div class="pb-prog-bg">
+      <div class="pb-prog-fill" id="pb-fill"></div>
+      <div class="pb-prog-loading" id="pb-loading-bar" style="display:none"></div>
+    </div>
+    <input class="pb-seek" type="range" id="pb-seek" min="0" max="100" value="0">
+  </div>
+  <div class="pb-body">
+    <!-- LEFT: art + meta + quick actions -->
+    <div class="pb-left">
+      <div class="pb-art-wrap" id="pb-art-open">
+        <img class="pb-art" id="pb-art" src="" alt="">
+        <div class="pb-art-ph" id="pb-art-ph">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" width="18" height="18"><path d="M9 18V5l12-2v13M9 18a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm12 0a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/></svg>
+        </div>
+      </div>
+      <div class="pb-meta" id="pb-art-open2">
+        <div class="pb-title" id="pb-title">—</div>
+        <div class="pb-artist" id="pb-artist">—</div>
+      </div>
+      <button class="pb-action-btn" id="pb-fav" title="В избранное">
+        <svg id="pb-fav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="17" height="17"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+      </button>
+      <button class="pb-action-btn" id="pb-dislike" title="Не нравится">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="17" height="17"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.72a2 2 0 0 0-2 1.7l-1.38 9a2 2 0 0 0 2 2.3zm7-13h2.67A2.31 2.31 0 0 1 22 4v7a2.31 2.31 0 0 1-2.33 2H17"/></svg>
+      </button>
+    </div>
+    <!-- CENTER: controls + seek -->
+    <div class="pb-center">
+      <div class="pb-controls">
+        <button class="pb-ctrl-btn" id="pb-shuffle" title="Перемешать">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="16" height="16"><polyline points="16 3 21 3 21 8"/><line x1="4" y1="20" x2="21" y2="3"/><polyline points="21 16 21 21 16 21"/><line x1="15" y1="15" x2="21" y2="21"/></svg>
+        </button>
+        <button class="pb-ctrl-btn pb-prev" id="pb-prev" title="Назад">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M6 6h2v12H6zm3.5 6 8.5 6V6z"/></svg>
+        </button>
+        <button class="pb-play-btn" id="pb-play" title="Воспроизвести">
+          <svg id="pb-play-icon" viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M8 5v14l11-7z"/></svg>
+        </button>
+        <button class="pb-ctrl-btn pb-next" id="pb-next" title="Следующий">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="m6 18 8.5-6L6 6v12zm2.5-6 8.5 6V6z"/></svg>
+        </button>
+        <button class="pb-ctrl-btn" id="pb-repeat" title="Повтор">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="16" height="16"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg>
+        </button>
+      </div>
+    </div>
+    <!-- RIGHT: extra + time -->
+    <div class="pb-right">
+      <button class="pb-ctrl-btn" id="pb-lyrics-btn" title="Текст">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="16" height="16"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="13" y2="17"/></svg>
+      </button>
+      <button class="pb-ctrl-btn" id="pb-spatial-btn" title="Пространственный звук">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="16" height="16"><path d="M12 2a10 10 0 0 1 0 20"/><path d="M12 6a6 6 0 0 1 0 12"/><path d="M12 10a2 2 0 0 1 0 4"/></svg>
+      </button>
+      <button class="pb-ctrl-btn" id="pb-vol-btn" title="Громкость">
+        <svg id="pb-vol-icon" viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M11 5 6 9H2v6h4l5 5V5zM15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>
+      </button>
+      <input class="pb-vol-range" type="range" id="pb-vol" min="0" max="100" value="80">
+      <div class="pb-time">
+        <span id="pb-cur">0:00</span>
+        <span class="pb-time-sep">/</span>
+        <span id="pb-dur">—</span>
+      </div>
+      <button class="pb-ctrl-btn pb-eq-btn" id="pb-eq-btn">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><rect x="4" y="14" width="2" height="7"/><rect x="9" y="10" width="2" height="11"/><rect x="14" y="6" width="2" height="15"/><rect x="19" y="2" width="2" height="19"/></svg>
+      </button>
+      <button class="pb-ctrl-btn pb-expand" id="pb-expand" title="Открыть плеер">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="m5 15 7-7 7 7"/></svg>
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- SPATIAL AUDIO PANEL (popover) -->
+<div class="spatial-panel" id="spatial-panel">
+  <div class="sp-hd">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="14" height="14"><path d="M12 2a10 10 0 0 1 0 20"/><path d="M12 6a6 6 0 0 1 0 12"/><path d="M12 10a2 2 0 0 1 0 4"/></svg>
+    <span>Пространственный звук</span>
+    <button class="sp-power" id="sp-power">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13"><path d="M18.36 6.64A9 9 0 1 1 5.64 6.64"/><line x1="12" y1="2" x2="12" y2="12"/></svg>
+    </button>
+  </div>
+  <div class="sp-headphone-note">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="12" height="12"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg>
+    Эффект рассчитан на прослушивание в наушниках
+  </div>
+  <div class="sp-modes">
+    <button class="sp-mode active" data-mode="0">Выкл</button>
+    <button class="sp-mode" data-mode="8">8D</button>
+    <button class="sp-mode" data-mode="12">12D</button>
+    <button class="sp-mode" data-mode="16">16D</button>
+  </div>
+  <div class="sp-slider-row">
+    <label>Интенсивность</label>
+    <input type="range" class="sp-slider" id="sp-intensity" min="0" max="100" value="90">
+    <span id="sp-intensity-val">90%</span>
+  </div>
+  <div class="sp-slider-row">
+    <label>Скорость вращения</label>
+    <input type="range" class="sp-slider" id="sp-speed" min="5" max="100" value="32">
+    <span id="sp-speed-val">32%</span>
+  </div>
+  <div class="sp-rooms">
+    <label>Комната</label>
+    <div class="sp-room-btns">
+      <button class="sp-mode active" data-room="none">Нет</button>
+      <button class="sp-mode" data-room="small">Малая</button>
+      <button class="sp-mode" data-room="hall">Зал</button>
+      <button class="sp-mode" data-room="large">Большая</button>
+    </div>
+  </div>
+</div>
+
+<!-- LYRICS PANEL -->
+<div class="lyrics-panel" id="lyrics-panel">
+  <div class="lp-hd">
+    <span>Текст песни</span>
+    <div class="lp-sources" id="lp-sources"></div>
+    <button class="lp-close" id="lp-close">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+  </div>
+  <div class="lp-scroll" id="lp-scroll">
+    <div class="lp-inner" id="lp-inner">
+      <div class="lp-empty" id="lp-empty">ищем текст...</div>
+    </div>
+  </div>
+</div>
+
+<!-- FULL PLAYER -->
+<div class="full-player" id="full-player" style="display:none">
+  <div class="fp-video-bg" id="fp-video-bg">
+    <iframe id="fp-yt-frame" src="" allow="autoplay" allowfullscreen frameborder="0"></iframe>
+    <div class="fp-video-overlay"></div>
+  </div>
+  <div class="fp-art-bg" id="fp-art-bg"></div>
+
+  <div class="fp-inner">
+    <button class="fp-down" id="fp-down">
+      <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+    </button>
+    <div class="fp-label">сейчас играет</div>
+
+    <div class="fp-art-wrap" id="fp-art-wrap">
+      <img class="fp-art" id="fp-art" src="" alt="" crossorigin="anonymous">
+      <div class="fp-art-ph" id="fp-art-ph"><svg viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="0.8"><path d="M9 18V5l12-2v13M9 18a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm12 0a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/></svg></div>
+    </div>
+    <div class="fp-karaoke" id="fp-karaoke" style="display:none">
+      <div class="fp-karaoke-scroll" id="fp-karaoke-scroll">
+        <div class="fp-karaoke-inner" id="fp-karaoke-inner"></div>
+      </div>
+    </div>
+
+    <div class="fp-meta-row">
+      <div class="fp-meta">
+        <div class="fp-title" id="fp-title">—</div>
+        <div class="fp-artist" id="fp-artist">—</div>
+      </div>
+      <button class="fp-fav" id="fp-fav">
+        <svg id="fp-fav-icon" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="2" width="22" height="22"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+      </button>
+    </div>
+
+    <div class="fp-seek-wrap">
+      <div class="fp-seek-track">
+        <div class="fp-seek-fill" id="fp-seek-fill"></div>
+        <div class="fp-seek-loading" id="fp-seek-loading" style="display:none"></div>
+        <input class="fp-seek" type="range" id="fp-seek" min="0" max="100" value="0">
+      </div>
+      <div class="fp-times">
+        <span id="fp-cur">0:00</span>
+        <span class="fp-loading-label" id="fp-loading-label" style="display:none">загружаем...</span>
+        <span id="fp-dur">—</span>
+      </div>
+    </div>
+
+    <div class="fp-controls">
+      <button class="fp-ctrl fp-sm" id="fp-lyrics-btn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="17" height="17"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="13" y2="17"/></svg>
+      </button>
+      <button class="fp-ctrl fp-sm" id="fp-shuffle2">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="17" height="17"><polyline points="16 3 21 3 21 8"/><line x1="4" y1="20" x2="21" y2="3"/><polyline points="21 16 21 21 16 21"/><line x1="15" y1="15" x2="21" y2="21"/></svg>
+      </button>
+      <button class="fp-ctrl" id="fp-prev">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M6 6h2v12H6zm3.5 6 8.5 6V6z"/></svg>
+      </button>
+      <button class="fp-ctrl fp-play-big" id="fp-play">
+        <svg id="fp-play-icon" viewBox="0 0 24 24" fill="currentColor" width="26" height="26"><path d="M8 5v14l11-7z"/></svg>
+      </button>
+      <button class="fp-ctrl" id="fp-next">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="m6 18 8.5-6L6 6v12zm2.5-6 8.5 6V6z"/></svg>
+      </button>
+      <button class="fp-ctrl fp-sm" id="fp-repeat2">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="17" height="17"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg>
+      </button>
+      <button class="fp-ctrl fp-sm" id="fp-spatial-btn2">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="17" height="17"><path d="M12 2a10 10 0 0 1 0 20"/><path d="M12 6a6 6 0 0 1 0 12"/><path d="M12 10a2 2 0 0 1 0 4"/></svg>
+      </button>
+    </div>
+
+    <div class="fp-vol-row">
+      <svg viewBox="0 0 24 24" fill="currentColor" width="13" height="13" style="opacity:.3"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02z"/></svg>
+      <input class="fp-vol" type="range" id="fp-vol" min="0" max="100" value="80">
+    </div>
+
+    <div class="fp-cached" id="fp-cached" style="display:none">
+      <svg viewBox="0 0 24 24" fill="currentColor" width="11" height="11"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      на устройстве
+    </div>
+  </div>
+</div>
+
+<!-- LOGIN MODAL -->
+<div class="modal-bg" id="m-login" style="display:none">
+  <div class="modal">
+    <button class="modal-x" id="m-login-x"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+    <h3 class="modal-title">Войти</h3>
+    <div class="modal-sub">сохраняй избранное и историю треков</div>
+    <button id="google-btn" class="google-btn">
+      <svg width="16" height="16" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+      Войти через Google
+    </button>
+    <div class="modal-divider">или email</div>
+    <div id="step1">
+      <input class="modal-input" type="email" id="e-email" placeholder="your@email.com">
+      <button class="btn-w" style="width:100%;margin-top:8px" id="send-btn">Отправить код</button>
+    </div>
+    <div id="step2" style="display:none">
+      <input class="modal-input" type="text" id="e-code" placeholder="Код из письма" maxlength="6">
+      <div class="modal-row-end">
+        <button class="btn-ghost" id="back-btn">← Назад</button>
+        <button class="btn-w" id="verify-btn">Подтвердить</button>
+      </div>
+    </div>
+    <div class="err-msg" id="auth-err" style="display:none"></div>
+  </div>
+</div>
+
+<!-- LOGIN MODAL -->
+<div id="login-modal" style="display:none;position:fixed;inset:0;z-index:950;background:rgba(0,0,0,.75);align-items:center;justify-content:center;backdrop-filter:blur(8px)">
+  <div style="background:var(--bg2);border:1px solid var(--border);border-radius:16px;padding:32px 28px;width:360px;display:flex;flex-direction:column;gap:0;position:relative">
+    <button id="modal-close" style="position:absolute;top:14px;right:14px;background:none;border:none;cursor:pointer;color:var(--dim);font-size:18px;line-height:1">✕</button>
+
+    <!-- view: main -->
+    <div id="auth-view-main">
+      <div style="font-size:18px;font-weight:700;margin-bottom:6px">Войти в nodex.pw</div>
+      <div style="font-size:13px;color:var(--dim);margin-bottom:20px">синхронизация избранного между устройствами</div>
+
+      <button id="google-login-btn" style="display:flex;align-items:center;justify-content:center;gap:10px;width:100%;background:var(--bg3);border:1px solid var(--border);border-radius:10px;padding:12px 16px;cursor:pointer;color:var(--text);font-size:14px;font-family:inherit;font-weight:500;margin-bottom:10px;transition:background .15s">
+        <svg viewBox="0 0 24 24" width="18" height="18"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+        Войти через Google
+      </button>
+
+      <div style="display:flex;align-items:center;gap:10px;margin:4px 0 10px">
+        <div style="flex:1;height:1px;background:var(--border)"></div>
+        <span style="color:var(--dim);font-size:12px">или</span>
+        <div style="flex:1;height:1px;background:var(--border)"></div>
+      </div>
+
+      <div style="display:flex;gap:6px;margin-bottom:10px">
+        <button id="tab-login" style="flex:1;padding:8px;border-radius:7px;border:none;cursor:pointer;font-size:13px;font-family:inherit;background:var(--accent);color:#fff;font-weight:600">Войти</button>
+        <button id="tab-register" style="flex:1;padding:8px;border-radius:7px;border:1px solid var(--border);cursor:pointer;font-size:13px;font-family:inherit;background:none;color:var(--dim)">Регистрация</button>
+      </div>
+      <input id="auth-email" type="text" placeholder="Логин (a-z 0-9 _ - .)" style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:10px 12px;color:var(--text);font-size:14px;font-family:inherit;outline:none;width:100%;margin-bottom:8px">
+      <input id="auth-name" type="text" placeholder="Имя (необязательно)" style="display:none;background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:10px 12px;color:var(--text);font-size:14px;font-family:inherit;outline:none;width:100%;margin-bottom:8px">
+      <input id="auth-pass" type="password" placeholder="Пароль" style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:10px 12px;color:var(--text);font-size:14px;font-family:inherit;outline:none;width:100%;margin-bottom:8px">
+      <div id="auth-error" style="display:none;color:#f56;font-size:12px;padding:0 2px;margin-bottom:6px"></div>
+      <button id="auth-submit-btn" style="background:var(--accent);border:none;border-radius:8px;padding:11px 16px;cursor:pointer;color:#fff;font-size:14px;font-weight:600;font-family:inherit;width:100%;margin-bottom:8px">Войти</button>
+      <button id="guest-login-btn" style="background:none;border:1px solid var(--border);border-radius:8px;padding:9px 16px;cursor:pointer;color:var(--dim);font-size:13px;font-family:inherit;width:100%">Продолжить как гость</button>
+    </div>
+
+    <!-- view: code entry -->
+    <div id="auth-view-code" style="display:none;text-align:center">
+      <div style="font-size:18px;font-weight:700;margin-bottom:8px">Введи код</div>
+      <div style="font-size:13px;color:var(--dim);margin-bottom:24px">Сайт показал 6-значный код — введи его ниже</div>
+      <div style="display:flex;justify-content:center;gap:8px;margin-bottom:20px" id="code-boxes">
+        <input class="code-box" maxlength="1" inputmode="numeric" pattern="[0-9]">
+        <input class="code-box" maxlength="1" inputmode="numeric" pattern="[0-9]">
+        <input class="code-box" maxlength="1" inputmode="numeric" pattern="[0-9]">
+        <input class="code-box" maxlength="1" inputmode="numeric" pattern="[0-9]">
+        <input class="code-box" maxlength="1" inputmode="numeric" pattern="[0-9]">
+        <input class="code-box" maxlength="1" inputmode="numeric" pattern="[0-9]">
+      </div>
+      <div id="code-error" style="display:none;color:#f56;font-size:12px;margin-bottom:10px"></div>
+      <button id="code-submit-btn" style="background:var(--accent);border:none;border-radius:8px;padding:11px 24px;cursor:pointer;color:#fff;font-size:14px;font-weight:600;font-family:inherit;width:100%;margin-bottom:8px">Подтвердить</button>
+      <button id="code-back-btn" style="background:none;border:none;cursor:pointer;color:var(--dim);font-size:13px;font-family:inherit">← Назад</button>
+    </div>
+  </div>
+</div>
+<!-- USER MENU -->
+<div class="umenu" id="umenu"></div>
+<!-- CTX MENU -->
+<div class="ctx-menu" id="ctx-menu" style="display:none"></div>
+<!-- UPDATE BAR -->
+<div id="update-bar" style="display:none"><span id="update-msg">доступно обновление</span><button id="update-action-btn">скачать</button><button id="update-dismiss">✕</button></div>
+<!-- LOAD OVERLAY -->
+<div class="load-over" id="load-over" style="display:none"><div class="load-box"><div class="spinner"></div><p id="load-msg">загружаем...</p></div></div>
+<!-- SPLASH -->
+<div id="splash"><div class="splash-inner"><div class="splash-orb"></div><svg class="splash-logo" viewBox="0 0 100 100" fill="none" width="60" height="60"><rect width="100" height="100" rx="18" fill="#141414"/><rect x="18" y="18" width="10" height="64" fill="#fff"/><rect x="28" y="18" width="10" height="10" fill="#fff"/><rect x="38" y="28" width="10" height="10" fill="#fff"/><rect x="48" y="38" width="10" height="10" fill="#fff"/><rect x="58" y="48" width="10" height="10" fill="#fff"/><rect x="68" y="18" width="10" height="64" fill="#fff"/></svg><div class="splash-name">nodex<span class="splash-dot">.</span>pw</div><div class="splash-update-wrap"><div class="splash-bar"><div class="splash-fill" id="splash-fill"></div></div><div id="splash-status" class="splash-status-row"><span class="splash-status-dot" id="splash-dot-anim"></span><span class="splash-label" id="splash-label">проверяем обновления...</span></div></div><div id="splash-update-ok" class="splash-update-ok" style="display:none">обновление не требуется</div><div id="splash-update-err" class="splash-update-err" style="display:none">не получилось проверить обновление — проверьте интернет соединение</div><div class="splash-credit">made by savsis just for you</div></div></div>
+
+<audio id="audio" playsinline preload="none"></audio>
+<canvas id="color-canvas" width="8" height="8" style="display:none"></canvas>
+<script src="app.js"></script>
+</body>
+</html>
