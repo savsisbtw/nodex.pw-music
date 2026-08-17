@@ -1,5 +1,7 @@
 ### нодекс.пв 
 
+
+![license](https://img.shields.io/github/license/devsavsis/nodex.pw-music)
 - Проект на  js ts html css.
 - бекенд на Rust, go
 - передача обложек треков и т.д проходит через grpc wss webrtc: сервер получает запрос берет ссылку с AppleMusic sk yt и напрямую транслирует поток вам в нужном вам формате
